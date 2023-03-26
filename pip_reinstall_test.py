@@ -204,8 +204,8 @@ CASES = [
     ),
     Case(
         name="file-wheel-same-version",
-        install_req=["/home/sbi-local/FOSS/pip-reinstall-test/wheelhouse/pip_test_package-0.1.1-py3-none-any.whl"],
-        reinstall_req=["/home/sbi-local/FOSS/pip-reinstall-test/wheelhouse/pip_test_package-0.1.1-py3-none-any.whl"],
+        install_req=[WHEELHOUSE_PATH / "pip_test_package-0.1.1-py3-none-any.whl"],
+        reinstall_req=[WHEELHOUSE_PATH / "pip_test_package-0.1.1-py3-none-any.whl"],
         variants=[
             CaseVariant(
                 reinstall_opts=[],
@@ -221,8 +221,8 @@ CASES = [
     ),
     Case(
         name="file-sdist-same-version",
-        install_req=["pip-test-package @ file:///home/sbi-local/FOSS/pip-reinstall-test/wheelhouse/pip-test-package-0.1.1.tar.gz"],
-        reinstall_req=["pip-test-package @ file:///home/sbi-local/FOSS/pip-reinstall-test/wheelhouse/pip-test-package-0.1.1.tar.gz"],
+        install_req=["pip-test-package @ file:///{WHEELHOUSE_PATH}/pip-test-package-0.1.1.tar.gz"],
+        reinstall_req=["pip-test-package @ file:///{WHEELHOUSE_PATH}/pip-test-package-0.1.1.tar.gz"],
         variants=[
             CaseVariant(
                 reinstall_opts=[],
