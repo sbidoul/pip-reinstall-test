@@ -1,0 +1,10 @@
+.coverage*
+.mypy_cache/
+*.pyc
+cache/
+htmlcov/
+pip-test-package/
+pkga/
+src/
+wheelhouse/
+report.html

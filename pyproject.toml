@@ -1,0 +1,7 @@
+[project]
+name = "pip-reinstall-test"
+version = "1.0"
+dependencies = ["rich"]
+
+[tool.black]
+line-length = 160
